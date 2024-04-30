@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>R&D 신문고</title>
+</head>
+<body>
+    <div id="wrap"> 
+        <div class="wrapper">
+            <label>
+                <input type="checkbox">
+                <div class="toggle">
+                    <span class="top_line common"></span>
+                    <span class="middle_line common"></span>
+                    <span class="bottom_line common"></span>
+                </div>
+                <div class="slide">
+                    <h1>MENU</h1>
+                    <ul>
+                        <li>
+                            <a href="#n">자주 묻는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#n">게시판</a>
+                            <ul>
+                                <li><a href="#n">연구수행문의</a></li>
+                                <li><a href="#n">IRIS 시스템</a></li>
+                                <li><a href="#n">연구현장의견</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </label>
+            <header class="header">
+                <div class="container">
+                    <div class="logo">
+                        <img src="../R&D SEARCH/images/book.png" alt="R&D신문고 대표 로고 이미지">
+                        <h1>R&D 신문고</h1>
+                    </div>
+                    <div class="sug_search">
+                        <i class="icon"><a>아이콘 이미지</a></i>
+                        <input type="text" placeholder="궁금하신 내용을 먼저 검색해보세요">
+                    </div>
+                </div>
+            </header>
+            <section class="visual">
+                <h2>검색 결과 영역</h2>
+                <div class="container">
+                    <span>검색어<strong>"연구비"</strong>에 대한 총 <strong>n</strong>건에 검색 결과를 찾았습니다.</span>
+                    <div class="faq">
+                        <div class="main_faq">
+                            <span>FAQ</span>
+                        </div>
+                        <div class="sub_faq">
+                            <ul>
+                                <li>
+                                    <a href="#n">
+                                        <span class="title">영리기관의 인건비 현금산정 기준 적용시 시스템 설정을 어떻게 해야 하나요?</span>
+                                        <p class="content">"국가연구개발사업 연구개발비 사용기준 제65조 제4항 제2호에 따른 전문연구사업자로 신고한 연구개발기관에 소속되어 해당 연구개발과제에 참여하는 참여연구자"에 대해서는 인건비를 현금산정이 가능하도록 되어 있습니다.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <span class="title">[NRI]평가위원 활동이력을 확인하고 싶어요.</span>
+                                        <p class="content">IRIS홈페이지 내 국가연구자번호 찾기를 클릭하시면 이름, 생년월일, 휴대폰 또는 이메일 주소를 통해 국가연구자번호를 조회하실 수 있습니다.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <span class="title">[R&D업무포털]접수, 협약용 계획서 작성 시 연구원추가에서 연구자가 조회되지 않을 때</span>
+                                        <p class="content">국가연구개발사업에 참여하기 위해서는 연구자번호발급 및 연구자전환동의가 선수행되어야 합니다.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <span class="title">FAQ 임상연구지원사업 과제접수 시 '위탁기관' 관련 문의</span>
+                                        <p class="content">거소증이 없는 외국인 연구자의 회원가입은 개인정보 추가 수집 및 이용 약관 동의 및 본인확인을 위한 증빙문서* 업로드하신 후, 관리자 승인을 거쳐 연구자번호 발급이 완료됩니다.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <span class="title">[NRI]국가연구자번호 발급 및 확인 방법</span>
+                                        <p class="content">거소증이 없는 외국인 연구자의 회원가입은 개인정보 추가 수집 및 이용 약관 동의 및 본인확인을 위한 증빙문서* 업로드하신 후, 관리자 승인을 거쳐 연구자번호 발급이 완료됩니다.</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="board_page">
+                        <div class="paginate">
+                            <a href="#n" class="page_first" title="첫페이지">
+                                <span>첫페이지</span>
+                                <i class="material-symbols-outlined">keyboard_double_arrow_left</i>
+                            </a>
+                            <a href="#n" class="page_prev" title="이전페이지">
+                                <span>이전페이지</span>
+                                <i class="material-symbols-outlined">chevron_left</i>
+                            </a>
+                            <a href="#n" class="page_now" title="1페이지">
+                                <strong>1</strong>
+                            </a>
+                            <a href="#n" class="page_now" title="2페이지">
+                                <strong>2</strong>
+                            </a>
+                            <a href="#n" class="page_now" title="3페이지">
+                                <strong>3</strong>
+                            </a>
+                            <a href="#n" class="page_now" title="4페이지">
+                                <strong>4</strong>
+                            </a>
+                            <a href="#n" class="page_now" title="5페이지">
+                                <strong>5</strong>
+                            </a>
+                            <a href="#n" class="page_none" title="6페이지">
+                                <strong>6</strong>
+                            </a>
+                            <a href="#n" class="page_none" title="7페이지">
+                                <strong>7</strong>
+                            </a>
+                            <a href="#n" class="page_none" title="8페이지">
+                                <strong>8</strong>
+                            </a>
+                            <a href="#n" class="page_none" title="9페이지">
+                                <strong>9</strong>
+                            </a>
+                            <a href="#n" class="page_none" title="10페이지">
+                                <strong>10</strong>
+                            </a>
+                            <a href="#n" class="page_first" title="다음페이지">
+                                <span>다음페이지</span>
+                                <i class="material-symbols-outlined">chevron_right</i>
+                            </a>
+                            <a href="#n" class="page_prev" title="마지막페이지">
+                                <span>마지막페이지</span>
+                                <i class="material-symbols-outlined">keyboard_double_arrow_right</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mov_page">
+                <h3>문의 작성 페이지 이동 영역</h3>
+                <div class="container">
+                    <strong>필요한 답이 없다면 문의를 등록해보세요. 클릭 시 문의 작성페이지로 이동합니다.</strong>
+                    <ul>
+                        <li class="list01">
+                            <a href="#n">
+                                <i class="material-symbols-outlined">edit_document</i>
+                                <span>연구수행문의</span><!-- 1차 메뉴 -->
+                                <p>(사업·과제·제도·변경)</p>
+                            </a>
+                            <ul class="active"><!-- 2차 메뉴 -->
+                                <li><a href="#n">공고·접수 문의</a></li>
+                                <li><a href="#n">사업·과제 문의</a></li>
+                                <li><a href="#n">R&D 제도 문의</a></li>
+                                <li><a href="#n">이관데이터 문의</a></li>
+                            </ul>
+                        </li>
+                        <li class="list03">
+                            <a href="#n">
+                                <i class="material-symbols-outlined">settings</i>
+                                <span>IRIS <br class="none">시스템</span>
+                            </a>
+                        </li>
+                        <li class="list02">
+                            <a href="#n">
+                                <i class="material-symbols-outlined">volume_up</i>
+                                <span>연구현장의견</span><!-- 1차 메뉴 -->
+                                <p>(정책제안,연구애로)</p>
+                            </a>
+                            <ul class="active"><!-- 2차 메뉴 -->
+                                <li><a href="#n">연구애로</a></li>
+                                <li><a href="#n">혁신법 개선 제안</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+@import url(../css/default.css);
+@import url(../css/common.css);
+
+.wrapper {
+    position: relative;
+}
+
+label .slide {
+    height: 500px;
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    background-color: #1f40aa;
+    transition: 0.5s ease;
+    transform: translateX(1000px);
+    z-index: 1;
+}
+
+label .slide h1 {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 20px;
+    padding-right: 30px;
+    pointer-events: none;
+}
+label .slide ul {
+    padding-left: 30px;
+}
+label .slide ul > li {
+    width: 100%;
+}
+label .slide ul > li > a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+label .slide ul > li > a:hover {
+    color: #41f4f6;
+    text-decoration: underline;
+}
+label .slide ul > li > ul  {
+    padding: 0;
+}
+label .slide ul > li > ul > li > a {
+    color: #a3a3a3;
+    font-size: 15px;
+}
+label input {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+label .toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 2px;
+    top: 60px;
+    right: 40px;
+    background-color: #1f40aa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+label .toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+label .toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+label .toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+label .toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+label input:checked ~ .toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+label input:checked ~ .toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+label input:checked ~ .toggle .middle_line {
+    opacity: 0;
+    transform: translateX(20px);
+}
+label input:checked ~ .slide {
+    transform: translateX(0);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.container .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 250px;
+}
+.container .main .logo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.container .main .logo h1 {
+    margin-left: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #1f40aa;
+}
+.container .main .logo img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 65px;
+    height: 50px;
+}
+
+.container .main .sug_search {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    width: 680px;
+    height: 80px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    
+}
+.container .main .sug_search .icon {
+    display: block;
+    margin-left: 30px;
+    background-image: url(../images/search.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.container .main .sug_search .icon a {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+.container .main .sug_search input {
+    padding-left: 30px;
+    font-size: 25px;
+    border: 0;
+    width: 80%;
+    outline: none;
+}
+.container .main .sug_search input::placeholder {
+    color: #a3a3a3;
+}
+.container .main .sub_txt {
+    margin-top: 30px;
+}
+.container .main .sub_txt span {
+    display: flex;
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 500;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width:1200px) {
+    label .slide {
+        height: 450px;
+    }
+    .container .main {
+        margin-top: 260px;
+    }
+    .container .main .sug_search {
+        width: 630px;
+        height: 70px;
+    }
+    .container .main .sug_search {
+        margin: 10px 0px 20px 0px
+    }
+    .container .main .sug_search input {
+        font-size: 23px;
+    }
+    .container .main .sub_txt span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    label .slide {
+        height: 400px;
+    }
+    .container .main {
+        margin-top: 220px;
+    }
+    .container .main .logo {
+        margin-bottom: 30px;
+    }
+    .container .main .logo h1 {
+        font-size: 45px;
+    }
+    .container .main .logo img {
+        height: 50px;
+    }
+    .container .main .sug_search {
+        width: 580px;
+        height: 60px;
+        margin: 10px 0px;
+    }
+    .container .main .sug_search .icon {
+        width: 25px;
+        height: 25px;
+    }
+    .container .main .sug_search input {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container .main {
+        margin-top: 150px;
+    }
+    .container .main .logo {
+        margin-bottom: 10px;
+    }
+    .container .main .logo h1 {
+        font-size: 40px;
+    }
+    .container .main .logo img {
+        width: 60px;
+        height: 40px;
+    }
+    
+    .container .main .sug_search {
+        width: 520px;
+        height: 50px;
+    }
+    .container .main .sug_search .icon {
+        width: 25px;
+        height: 25px;
+    }
+    .container .main .sug_search input {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .container .main {
+        margin-top: 130px;
+    }
+    .container .main .logo h1 {
+        font-size: 35px;
+    }
+    .container .main .logo img {
+        width: 55px;
+        height: 35px;
+    }
+    .container .main .sug_search {
+        width: 480px;
+        height: 45px;
+        margin: 10px 10px;
+    }
+    .container .main .sub_txt span {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container .main .logo img {
+        width: auto;
+        height: 35px;
+    }
+    .container .main .sug_search {
+        width: 100%;
+        height: 45px; 
+    }
+    .container .main .sug_search .icon {
+        width: 25px;
+        height: 25px;
+    }
+    .container .main .sug_search input {
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    .container .main .sub_txt {
+        margin-top: 20px;
+    }
+    .container .main .sub_txt span {
+        font-size: 15px;
+    }
+    .container .main .sug_search .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    label .slide ul > li > a {
+        font-size: 17px;
+    }
+    label .slide ul > li > ul > li > a {
+        font-size: 13px;
+    }
+    .container .main .sug_search {
+        margin: 10px 0px 5px 0px;
+    }
+    .container .main .sub_txt span {
+        font-size: 13px;
+    }
+}

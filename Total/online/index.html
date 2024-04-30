@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,300,0,0"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="js/main.js"></script>
+    <title>평가위원회 참여 응답</title>
+</head>
+<body>
+    <div id="wrap">
+        <div class="wrapper">
+            <section class="mobile_web">
+                <div class="container">
+                    <h1>평가위원회 참여 응답</h1>
+                    <div class="section1">
+                        <p>1. 귀 평가위원의 무궁한 발전을 기원합니다.</p>
+                        <p>2. 귀하를 ${평가위원회구분}에 평가위원으로 위촉코자 하오니, 아래 내용과 일정을 확인하신 후 참석 가능 여부를 회신하여 주시기 바랍니다.</p>
+                        <p>※ 아울러, 본 참여의사는 회신기한 내 응답을 주셔야 하며, 기한 이후에는 참여의사가 없으신 것으로 판단하오니 이 점 양지하여 주시기 바랍니다. 또한, 기한 내 참여의사를 밝히시고 응답을 하시더라도 위원회 정족수가 조기에 마감되는 등 선정기준에 따라 위촉되지 않을 수 있습니다.</p>
+                        <p>※ 최종 위촉결과에 대해서는 ${전문기관명} 평가위원회 담당자가 별도 통보드릴 예정이오니 참고하여 주시기 바랍니다.</p>
+                        <p>감사합니다.</p>
+                        <p class="fin"> - 아래 -</p>
+                    </div>
+                    <div class="section2">
+                        <span>가. 평가위원회 개요</span>
+                        <ul>
+                            <li>- 전문기관 : ${전문기관명}</li>
+                            <li>- 평가내용 : ${평가위원회구분}</li>
+                            <li>- 평가위원 : ${평가위원명}</li>
+                            <li>- 평가방식 : ${평가방식}</li>
+                            <li>- 분과명 : ${분과명}</li>
+                            <li>- 담당간사 : ${담당간사이름}</li>
+                            <li>- 평가기간 : ${평가시작일자} - ${평가종료일자}</li>
+                            <li>- 예비검토기간 : ${예비검토종료일자}</li>
+                            <li>- 평가장소 : ${지역} - ${평가장소}</li>
+                        </ul>
+                        <span>나. 평가대상 과제수 : ${과제수} (최종 평가대상 과제수는 변동 될 수 있습니다.)</span>
+                        <span>다. 회신기한 : ${섭외종료시간} (회신기한이 초과되면 응답이 불가합니다)</span> 
+                    </div>
+                    <div class="btn">
+                        <div class="btn_total">
+                            <label><input type="radio" class="radio_value" name = "attendance" value="1"><span>참석가능</span></label>
+                            <label><input type="radio" class="no_radio_value" name = "attendance" value="2"><span>참석불가</span></label>
+                            <ul class="btn_open">
+                                <li><label><input type="radio" class="radio_value" name = "attendance" value="1">개인사정</label></li>
+                                <li><label><input type="radio" class="radio_value" name = "attendance" value="2">강의</label></li>
+                                <li><label><input type="radio" class="radio_value" name = "attendance" value="3">외부일정</label></li>
+                                <li>
+                                    <label>
+                                        <input type="radio" class="radio-value" name = "attendance" value="4">기타사유 
+                                        <input type="text" maxlength="5" name="text-nursing" placeholder="기타사유 입력">
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_submit">
+                    <button>제출</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+@import url(common.css);
+@import url(default.css);
+
+.popup {
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 150px;
+    z-index: 6000; */
+    padding-bottom: 10px;
+    width: 1280px;
+    border: 2px solid #cccccc;
+}
+
+.popup .header {
+    height: 120px;
+}
+
+.popup .header .gnb {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.popup .header .gnb::before {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    width: 1240px;
+    height: 1px;
+    background-color: #cccccc;
+    content: "";
+}
+.popup .header .gnb::after {
+    position: absolute;
+    bottom: 7px;
+    right: 18px;
+    width: 1240px;
+    height: 1px;
+    background-color: #cccccc;
+    content: "";
+}
+.popup .header .gnb .logo {
+    position: relative;
+    width: 253px;
+    height: 46px;
+    background-image: url(../images/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0;
+    line-height: 0;
+    margin: 38px 20px 43px 40px;
+}
+.popup .header .gnb .logo::after {
+    position: absolute;
+    right: -21px;
+    top: 13px;
+    width: 2px;
+    height: 22px;
+    background-color: #cccccc;
+    content: "";
+}
+.popup .header .gnb .gnb_wrap ul {
+    display: flex;
+    align-items: center;
+    margin: 38px 0px 45px 0;
+    
+}
+.popup .header .gnb .gnb_wrap ul li {
+    margin-right: 150px;
+}
+.popup .header .gnb .gnb_wrap ul li a {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+.popup .header .gnb .gnb_wrap ul li:last-child {
+    margin-right: 0;
+}
+.popup .header .gnb .gnb_wrap .rd_smg {
+    margin-left: 20px;
+}
+.popup .header .gnb .gnb_wrap .rd_smg a {
+    font-size: 25px;
+    font-weight: 700;
+    color: #121a4c;
+}
+
+.popup .contents {
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+    height: 560px;
+}
+.popup .contents .banner {
+    width: 540px;
+}                   
+.popup .contents .banner h2 {
+    font-size: 0;
+    line-height: 0;
+}
+.popup .contents .banner img {
+    width: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.popup .contents .suggest {
+    width: 700px;
+    margin-left: 20px;
+}
+.popup .contents .suggest .sug_search {
+    display: flex;
+    margin: 20px 0px 0px 0px;
+    width: 680px;
+    height: 80px;   
+    border: 3px solid #000000;
+}
+.popup .contents .suggest .sug_search button img {
+    padding: 5px 0px 0px 30px;
+}
+.popup .contents .suggest .sug_search input {
+    padding-left: 30px;
+    font-size: 25px;
+    width: 680px;
+    border: 0;
+    outline: none;
+}
+
+.popup .contents .suggest .sug_list {
+    margin: 55px 0px 55px 0px
+}
+.popup .contents .suggest .sug_list ul {
+    position: relative;
+    display: flex;
+}
+.popup .contents .suggest .sug_list ul li {
+    border: 2px solid #1f40aa;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.popup .contents .suggest .sug_list ul li:nth-child(2) {
+    position: absolute;
+    left: 157px;
+    top: 0;
+    z-index: 1;
+    content: "";
+}
+.popup .contents .suggest .sug_list ul li:nth-child(3) {
+    position: absolute;
+    left: 314px;
+    top: 0;
+    z-index: 2;
+    content: "";
+}.popup .contents .suggest .sug_list ul li:nth-child(4) {
+    position: absolute;
+    left: 471px;
+    top: 0;
+    z-index: 3;
+    content: "";
+}
+.popup .contents .suggest .sug_list ul li:nth-child(1),
+.popup .contents .suggest .sug_list ul li:nth-child(3){
+    background-color: #adbbe7;
+}
+.popup .contents .suggest .sug_list ul li:nth-child(2),
+.popup .contents .suggest .sug_list ul li:nth-child(4){
+    background-color: #f3becf;
+}
+.popup .contents .suggest .sug_list ul li a {
+    display: block;
+}
+.popup .contents .suggest .sug_list ul li:nth-child(1) a img {
+    margin: 42px auto 10px;
+    display: block;
+    width: auto;
+}
+.popup .contents .suggest .sug_list ul li:nth-child(2) a img {
+    margin: 42px auto 20px;
+    display: block;
+    width: auto;
+}
+.popup .contents .suggest .sug_list ul li:nth-child(3) a img {
+    margin: 42px auto 10px;
+    display: block;
+    width: auto;
+}
+.popup .contents .suggest .sug_list ul li:nth-child(4) a img {
+    margin: 42px auto 10px;
+    display: block;
+    width: auto;
+}
+.popup .contents .suggest .sug_list ul li a span {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #1f40aa;
+    text-align: center;
+}
+
+.popup .contents .suggest .sug_btn {
+    display: flex;
+    flex-direction: column;
+}
+.popup .contents .suggest .sug_btn button {
+    width: 680px;
+    height: 70px;
+    border-radius: 16px;
+}
+.popup .contents .suggest .sug_btn button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup .contents .suggest .sug_btn button span {
+    margin-right: 20px;
+    font-size: 27px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.popup .contents .suggest .sug_btn .btn_faq {
+    margin-bottom: 10px;
+    background-color: #ef4b81;
+}
+.popup .contents .suggest .sug_btn .btn_wrt {
+    background-color: #1f40aa;
+}

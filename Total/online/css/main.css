@@ -1,0 +1,246 @@
+@import url(common.css);
+@import url(default.css);
+
+
+.mobile_web {
+    padding: 20px 150px 20px;
+    background-color: #ffffff;
+    width: 1280px;
+    height: auto;
+}
+.mobile_web .container {
+    display: flex;
+    flex-direction: column;
+}
+.mobile_web .container h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mobile_web .container .section1 p {
+    margin: 20px 0;
+    word-break: break-all;
+}
+.mobile_web .container .section1 .fin {
+    margin-left: 30px;
+} 
+
+.mobile_web .container .section2 span {
+    display: block;
+    word-break: break-all;
+}
+.mobile_web .container .section2 ul {
+    margin-bottom: 20px;
+}
+
+.mobile_web .container .btn .btn_total {  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 0px -30px;
+}
+.mobile_web .container .btn .btn_total input {
+    margin: 0 10px;
+}
+.mobile_web .container .btn .btn_total label span {
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    background-color: #1F40AA;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.mobile_web .container .btn .btn_total ul {
+    display: none;
+    position: absolute;
+    right: calc(50% - 303px);
+    bottom: 115%;
+    margin-left: 30px;
+    padding: 10px 10px;
+    width: 270px;
+    border: 2px solid #1F40AA;
+    background-color: #ffffff;
+    color: #1F40AA;
+    font-weight: 700;
+}
+.mobile_web .container .btn .btn_total ul.open {
+    display: block;
+}
+.mobile_web .container .btn .btn_total ul li label input[type=text] {
+    margin-top: 5px;
+    width: 225px;
+    color: #3d3d3d;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+}
+
+.mobile_web .btn_submit {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.mobile_web .btn_submit button {
+    width: 180px;
+    height: 50px;
+    background-color: #1F40aa;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:1400px) {
+    .mobile_web {
+        padding: 20px 100px 20px;
+        width: auto;
+    }
+    .mobile_web .container h1 {
+        margin-bottom: 25px;
+    }
+    .mobile_web .container .btn .btn_total label span {
+        width: 115px;
+        height: 45px;
+        font-size: 17px;
+        line-height: 43px;
+    }
+    .mobile_web .btn_submit button {
+        width: 160px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .mobile_web {
+        padding: 20px 80px 20px;
+    }
+    .mobile_web .container h1 {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .mobile_web .container .btn .btn_total label span {
+        width: 95px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 38px;
+    }
+    .mobile_web .btn_submit button {
+        width: 130px;
+        height: 40px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .mobile_web {
+        padding: 20px 40px 20px;
+    }
+    .mobile_web .container h1 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .mobile_web .container .section1 p {
+        margin: 15px 0;
+        font-size: 14px;
+    }
+    .mobile_web .container .section1 .fin {
+        margin-left: 20px;
+    }
+    .mobile_web .container .section2 span {
+        font-size: 14px;
+    }
+    .mobile_web .container .section2 ul {
+        margin: 15px 0;
+    }
+    .mobile_web .container .section2 ul li {
+        font-size: 14px;
+    }
+    .mobile_web .container .btn .btn_total label span {
+        width: 80px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 34px;
+    }
+    .mobile_web .container .btn .btn_total ul {
+        right: calc(50% - 257px);
+        margin-left: 30px;
+        padding: 10px 10px;
+        width: 224px;
+    }
+    .mobile_web .container .btn .btn_total ul li label input[type=text] {
+        width: 180px;
+    }
+    .mobile_web .btn_submit button {
+        width: 100px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .mobile_web {
+        padding: 10px 0px 20px 0px;
+    }
+    .mobile_web .container h1 {
+        font-size: 16px;
+    }
+    .mobile_web .container .section1 p {
+        margin: 10px 0;
+        font-size: 13px;
+    }
+    .mobile_web .container .section1 .fin {
+        margin-left: 10px;
+    }
+    .mobile_web .container .section2 span {
+        font-size: 13px;
+    }
+    .mobile_web .container .section2 ul {
+        margin: 10px 0;
+    }
+    .mobile_web .container .section2 ul li {
+        font-size: 13px;
+    }
+    .mobile_web .container .btn .btn_total {
+        margin: 20px 0px 0px -30px;
+    }
+    .mobile_web .container .btn .btn_total label span {
+        font-size: 14px;
+        width: 70px;
+    }
+    .mobile_web .container .btn .btn_total ul label li {
+        font-size: 13px;
+    }
+    .mobile_web .container .btn .btn_total ul {
+        right: calc(50% - 216px);
+        margin-left: 15px;
+        padding: 10px 10px;
+        width: 183px;
+    }
+    .mobile_web .container .btn .btn_total ul li label input[type=text] {
+        margin-top: 5px;
+        width: 145px;
+    }
+    .mobile_web .btn_submit {
+        margin-top: 15px;
+    }
+    .mobile_web .btn_submit button {
+        width: 90px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .mobile_web .container .btn .btn_total ul {
+        right: calc(50% - 162px);
+        padding: 10px 5px;
+        width: 129px;
+    }
+    .mobile_web .container .btn .btn_total ul li label input[type=text] {
+        width: 100px;
+    }
+}
